@@ -1,5 +1,5 @@
 export default class BasePage {
   open() {
-    cy.visit('');
+    cy.visit(Cypress.env('BASE_URL'));
   }
 }

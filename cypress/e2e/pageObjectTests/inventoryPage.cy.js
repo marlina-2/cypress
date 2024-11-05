@@ -1,7 +1,6 @@
 /// <reference types="cypress" />
 
 import LoginPage from '../../support/pageObject/LoginPage.js';
-import testData from '../../fixtures/credentials.json';
 import InventoryPage from '../../support/pageObject/InventoryPage.js';
 import YourCartPage from '../../support/pageObject/YourCartPage.js';
 import ItemPage from '../../support/pageObject/ItemPage.js';
@@ -10,8 +9,8 @@ describe('Check Inventory page', () => {
   beforeEach(() => {
     LoginPage.open();
     LoginPage.logIn(
-      testData.userNames.correctUserName,
-      testData.passwords.correctPassword,
+      Cypress.env('USER_NAME'),
+      Cypress.env('USER_PASSWORD'),
       YourCartPage
     );
   });
