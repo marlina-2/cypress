@@ -8,10 +8,7 @@ describe('Check login page', () => {
   });
 
   it('Log in with valid credentials', () => {
-    LoginPage.logIn(
-      testData.userNames.correctUserName,
-      testData.passwords.correctPassword
-    );
+    LoginPage.logIn(Cypress.env('USER_NAME'), Cypress.env('USER_PASSWORD'));
     InventoryPage.checkInventoryPageIsOpened();
   });
 

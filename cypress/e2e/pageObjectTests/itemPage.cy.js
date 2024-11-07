@@ -8,8 +8,9 @@ describe('Item Page Tests', () => {
   beforeEach(() => {
     LoginPage.open();
     LoginPage.logIn(
-      testData.userNames.correctUserName,
-      testData.passwords.correctPassword,
+      Cypress.env('USER_NAME'),
+      Cypress.env('USER_PASSWORD'),
+
       YourCartPage
     );
     InventoryPage.openItemByIndex(0);
