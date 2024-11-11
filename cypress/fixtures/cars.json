@@ -1,0 +1,11 @@
+{
+  "carBrandIds": {
+    "carBrandId": 1
+  },
+  "carModelIds": {
+    "carModelId": 1
+  },
+  "mileages": {
+    "mileage": 12000
+  }
+}
