@@ -10,6 +10,10 @@ module.exports = defineConfig({
       BASE_URL: 'https://www.saucedemo.com/',
       USER_NAME: 'standard_user',
       USER_PASSWORD: 'secret_sauce',
+
+      API_BASE_URL: 'https://qauto.forstudy.space/api',
+      API_USER_EMAIL: 'anna.panchuk123@test.test',
+      API_USER_PASSWORD: '123456Guest'
     },
 
     reporter: 'cypress-multi-reporters',
